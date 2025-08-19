@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+        // sum and factorial of n number 
+        // let n=Number(prompt("Enter the number"));
+        // if(isNaN(n) ){
+        //     console.log("Invlaid input");
+            
+        // }
+        // else {
+        //     if(n > 0 ){
+        //         var fact=1;
+        //         for(let i=1;i<=n;i++){
+        //             fact= fact * i;
+        //         }                             
+        //         console.log(fact);
+                
+                
+        //     }
+        //     else{
+        //         console.log("should be positive and more than 0 ");
+                
+        //     }
+        // }
+        // factor of n number
+        let n=Number(prompt("Enter the number"));
+        if(isNaN(n) ){
+            console.log("Invlaid input");
+            
+        }
+        else {
+            if(n > 0 ){
+              for(let i=1;i<=Math.floor(n/2);i++){
+                    if(n % i === 0){
+                        console.log(i);
+                        
+                        
+                    }
+                }
+                console.log(n);
+                
+                
+            }
+            else{
+                console.log("should be positive and more than 0 ");
+                
+            }
+        }
+       
+       
+    </script>
+</body>
+</html>

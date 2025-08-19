@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #tabs{
+            display: flex;
+            gap: 20px;
+        }
+        .tab{
+            padding: 12px 22px;
+            background-color: #dadada;
+            border-radius: 4px;
+        }
+
+        h3{
+            display: none;
+        }
+    </style>
+</head>
+<body>
+        <div id="tabs">
+            <div id="home" class="tab">Home</div>
+            <div id="about" class="tab">About</div>
+            <div id="contact" class="tab">Contact</div>
+        </div>
+
+        <h3 id="homeText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate odit, aperiam velit dicta quia quos illo deleniti officiis consequatur ab, modi blanditiis recusandae.</h3>
+
+        <h3 id="aboutText">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vero laboriosam, voluptatem beatae, earum quae officia ducimus perspiciatis in minima quaerat architecto aliquam officiis nobis, eligendi laudantium adipisci totam dolore aperiam facilis eaque error nisi ex? Temporibus illo corrupti minus vero quo odio fugiat est dignissimos iusto aliquam repellendus animi sint ad, id tempora eos, soluta blanditiis! Cumque natus incidunt voluptates! Aliquam recusandae vel laudantium deleniti expedita laboriosam ut ratione eligendi incidunt aspernatur accusantium, assumenda, officia doloremque similique. Voluptas iste quaerat officiis optio odit, harum ratione dolorem modi rem reiciendis! Odio dolorum quaerat id numquam accusantium autem adipisci iure maiores expedita exercitationem vitae ut molestiae, minus blanditiis accusamus perspiciatis ab reprehenderit corporis ipsa. Nemo accusantium facere magni voluptate nostrum expedita rerum perferendis debitis dolore maiores veritatis delectus praesentium deserunt dolorem, voluptas numquam nulla quisquam quibusdam, sit vero consequatur vel nihil ipsam cum. Consequuntur illo necessitatibus aperiam pariatur tempore natus perspiciatis id!</h3>
+
+        <h3 id="contactText">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat enim eaque officiis non laudantium iste, aspernatur perferendis ullam, dolore quod, ea tempora? Praesentium eius dolores enim, quos laborum atque ad nihil minima, voluptas nobis voluptatibus amet aspernatur qui veniam laboriosam ipsum quia, reiciendis ullam vitae beatae dolorum. Laudantium optio iusto quis quasi perspiciatis accusamus unde dolor vel tempore, esse odio ex praesentium sint soluta assumenda officia, voluptate culpa atque deleniti. Earum cumque itaque harum hic corporis aut assumenda facilis vero, perferendis voluptate ullam nisi, exercitationem omnis voluptas maxime possimus provident quaerat maiores fugit ipsam quisquam commodi? Repudiandae corrupti ea dolor nesciunt labore. A delectus facilis, enim molestias nam ducimus maxime explicabo officia quos quibusdam asperiores! Dolorem, obcaecati fugiat maiores quasi, praesentium vitae nam minus voluptas reiciendis tempora repudiandae! Doloremque et ea esse, repellat sequi veniam quibusdam possimus veritatis voluptate odio, sunt animi in aliquam earum provident illo laboriosam! Animi earum a quae aut possimus aspernatur consequuntur unde nulla, fugiat deserunt ipsa voluptate, consectetur voluptatibus quisquam distinctio ea debitis, adipisci consequatur quod cupiditate! Perferendis error, eaque sapiente temporibus reiciendis non. Vero labore voluptatem iste laudantium, ad ex neque quis temporibus molestiae provident excepturi sit velit ab ipsum, et reprehenderit consequatur odio! Voluptatum beatae consectetur incidunt sint nam reprehenderit iste veritatis quidem dolor nobis placeat esse non blanditiis natus saepe corrupti quod, molestiae commodi libero architecto explicabo exercitationem ab, cum quia! Illum omnis ex ipsum quae enim accusamus at reprehenderit doloribus harum tenetur exercitationem tempore, accusantium optio magni hic ut dicta recusandae numquam eveniet quos esse placeat. Dolore fuga eos suscipit est officia iusto nihil consectetur asperiores reiciendis cumque inventore error, assumenda temporibus voluptas veniam! Perspiciatis magni quo itaque eligendi nobis, commodi dolor ex dignissimos assumenda et cum nostrum rem eius beatae natus. Commodi optio doloribus expedita, numquam delectus corporis odio minus magni, temporibus consequuntur totam recusandae ad ducimus harum sunt vero!</h3>
+
+    <script>
+
+
+        var about = document.querySelector("#about")
+        var contact = document.querySelector("#contact")
+        var home = document.querySelector("#home")
+
+        
+        var aboutText = document.querySelector("#aboutText")
+        var contactText = document.querySelector("#contactText")
+        var homeText = document.querySelector("#homeText")
+
+        homeText.style.display = "initial";
+
+
+        about.addEventListener("click",function(){
+        aboutText.style.display = "initial";
+        homeText.style.display = "none";
+        contactText.style.display = "none";
+
+        })
+        
+        home.addEventListener("click",function(){
+        aboutText.style.display = "none";
+        homeText.style.display = "initial";
+          contactText.style.display = "none";
+        })
+
+        contact.addEventListener("click",function(){
+        aboutText.style.display = "none";
+         homeText.style.display = "none";
+        contactText.style.display = "initial";
+
+        })
+
+
+
+    </script>
+</body>
+</html>

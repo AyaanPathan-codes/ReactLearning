@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: "gilroy";
+    }
+
+    #main {
+      width: 100%;
+      height: 100%;
+      background-color: #f1f1f1;
+    }
+
+    .container {
+      padding: 10vw 25vw;
+    }
+
+    #input {
+      width: 100%;
+      padding: 12px 22px;
+      font-size: 30px;
+      font-weight: 500;
+      border-radius: 10px;
+      border: 1px solid #dadada;
+      outline-color: royalblue;
+    }
+    #person{
+      width: fit-content;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+    }
+    #people{
+      display: flex;
+      gap: 20px;
+      flex-wrap: wrap;
+      
+    }
+    #img{
+      width: 10vw;
+      height: 10vw;
+      background-color: red;
+      border-radius: 50%;
+      border: 2px solid black;
+       overflow: hidden;
+
+    }
+
+    #img img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+     
+    } 
+  </style>
+</head>
+<body>
+
+  <div id="main">
+    <div class="container">
+      <input type="text" placeholder="Search" id="input">
+      <div id="people">
+        <div id="person">
+          <div id="img">
+           <img src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          </div>
+           <h4>Ayaan</h4>
+        </div>
+          <div id="person">
+          <div id="img">
+           <img src="https://plus.unsplash.com/premium_photo-1671656349322-41de944d259b?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+          </div>
+           <h4>Ayaan</h4>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

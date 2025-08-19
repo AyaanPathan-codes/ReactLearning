@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <h4 id="h4"></h4>
+
+    <form action="">
+        <input id ="input1" type="text">
+        <input id="input2" type="text">
+
+
+        <button id="submit"> Submit</button>
+
+
+
+    </form>
+    
+
+    <script>
+        var inps = document.querySelectorAll('input[type="text"]') 
+        var h4 = document.querySelector("#h4");
+        var form = document.querySelector("form");
+
+      form.addEventListener("submit",(ev)=>{
+        ev.preventDefault();
+
+         for(var i = 0; i<inps.length; i ++){
+            if(inps[i].value.trim() === ''){
+                h4.textContent = "Error some fields are blank";
+                h4.style.color = "red";
+                break;
+
+
+            }
+
+          
+        }
+      }) 
+      
+
+
+    </script>
+</body>
+</html>

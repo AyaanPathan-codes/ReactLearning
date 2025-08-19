@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shopping Discount</title>
+</head>
+<body>
+
+<script>
+    // var payable = 0;
+    // var shopping = parseFloat(prompt("Enter the amount of your shopping:"));
+
+    // if (isNaN(shopping) || shopping < 0) {
+    //     console.log("❌ Invalid shopping amount entered.");
+    // } 
+    // else if (shopping < 5000) {
+    //     console.log(`🛒 You shopped for ₹${shopping}. ❌ No discount. Shop at least ₹5000 to get a discount.`);
+    // } 
+    // else if (shopping >= 5000 && shopping <= 7000) {
+    //     var discount = Math.floor(shopping * 0.05);
+    //     payable = shopping - discount;
+    //     console.log(`🛍️ You got 5% discount of ₹${discount}. Final payable: ₹${payable}`);
+    // } 
+    // else if (shopping > 7000 && shopping <= 9000) {
+    //     var discount = Math.floor(shopping * 0.10);
+    //     payable = shopping - discount;
+    //     console.log(`🎁 You got 10% discount of ₹${discount}. Final payable: ₹${payable}`);
+    // } 
+    // else {
+    //     var discount = Math.floor(shopping * 0.20);
+    //     payable = shopping - discount;
+    //     console.log(`🔥 You got 20% discount of ₹${discount}. Final payable: ₹${payable}`);
+   // }
+
+   
+    // var unit = Number(prompt("Enter the Unit used:"));
+    // var price =0; 
+    //  if (unit > 400) {
+    //  price += (unit-400) * 13;
+    //  unit = 400  //5200
+    //  //600    
+    //  }
+    //  if(unit >200 && unit <=400){
+    //     price += (unit - 200)* 8;
+    //     unit =200; //6800
+    //  //400
+    //  } 
+    //    if(unit > 100 && unit <=200){
+    //     price += (unit - 100)* 6; //7400
+    //     unit =100; //100
+    //  } 
+
+    //  price += unit * 4; //400 
+    //  console.log(price);
+     
+
+
+    let amount = 5225;
+    if(amount >= 500){
+      console.log("500 notes :"+Math.floor( amount/500));
+      amount = amount%500;
+      
+    }
+     if(amount >= 200){
+      console.log("200 notes :"+Math.floor( amount/200));
+      amount = amount%200;
+      
+    }
+ if(amount >= 100){
+      console.log("100 notes :"+Math.floor( amount/100));
+      amount = amount%100;
+      
+ }
+  if(amount >= 50){
+      console.log("50 notes :"+Math.floor( amount/50));
+      amount = amount%50;
+      
+ }
+   if(amount >= 20){
+      console.log("20 notes :"+Math.floor( amount/20));
+      amount = amount%20;
+      
+ }
+  if(amount >= 10){
+      console.log("10 notes :"+Math.floor( amount/10));
+      amount = amount%10;
+      
+ }
+  if(amount >= 5){
+      console.log("5 notes :"+Math.floor( amount/5));
+      amount = amount%5;
+      
+ }
+  if(amount === 1){
+      console.log("1 notes :"+Math.floor( amount/1));
+      amount = amount%1;
+      
+ }
+</script>
+
+</body>
+</html>

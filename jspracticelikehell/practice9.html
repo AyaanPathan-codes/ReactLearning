@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        body{
+            padding: 100px;
+        }
+        textarea{
+            width: 400px;
+            height: 130px;
+            font-size: 20px;
+            font-weight: 500;
+           border: 1px solid blue;
+            resize: none;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h3>character count : <span id="counter"> 0 </span></h3>
+    <textarea></textarea>
+
+
+    <script>
+
+        var textarea = document.querySelector("textarea");
+        var counter = document.querySelector("#counter");
+        textarea.addEventListener("input",()=>{
+              counter.textContent = textarea.value.length;
+                
+
+        });
+    </script>
+</body>
+</html>
